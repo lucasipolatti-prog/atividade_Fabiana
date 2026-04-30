@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed);
+    background-attachment: fixed;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.navegacao ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+.navegacao a {
+    text-decoration: none;
+    transition: 0.7s ease;
+    color: rgb(0, 166, 255);
+}
+
+.navegacao a:hover {
+    font-size: large;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    .navegacao ul {
+        display: flex;
+        flex-wrap: nowrap;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        top: 0px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navegacao ul {
+        transition: all 0.3s ease;
+    }
+
+    .navegacao ul li {
+        margin: 10px 0;
+    }
+
+    .navegacao ul.active {
+        display: flex;
+    }
+
+    .navegacao a {
+        color: white;
+        font-size: 18px;
+    }
+
+    .menu-toggle.active {
+        transform: rotate(90deg);
+    }
+}
+
+.home h2{
+    font-family: Arial, Helvetica;
+    margin: 20px;
+}
+
+.conteudoExplicativo .galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* quebra linha em telas menores */
+    gap: 20px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    font-size: large;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    /* tamanho máximo */
+    margin: 20px auto;
+    /* centraliza */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+ol {
+    margin-top: 50px;
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.subtitulo {
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.execucao {
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.explicacao {
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.remada {
+    height: 225px;
+    width: 225px;
+}
+
+.contato {
+    text-align: center;
+}
+
+.contatos {
+    margin-left: 20px;
+}
+
+#contato h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Instagram */
+.insta {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+/* LinkedIn */
+.linkedin {
+    background: #000000;
+}
+
+
+/* Hover efeito */
+.btn:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+footer{
+    text-align: center;
+}
+
+.contatos input,
+.contatos textarea,
+.contatos button,
+.formulario label,
+.formulario1 input {
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contatos input:focus,
+.contatos textarea:focus,
+.formulario label:focus,
+.formulario input:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.5);
+}
+
